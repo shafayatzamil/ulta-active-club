@@ -2,7 +2,17 @@ import React from 'react';
 import './Calculation.css';
 import image from '../images/user.jpg'
 
-const Calculation = () => {
+const Calculation = ({cart}) => {
+    console.log(cart);
+
+    let total=0;
+    for(const product  of cart){
+        total= total+product.timeRequired;
+    }
+
+
+
+
     return (
         <div>
             <div className='user'>
@@ -38,7 +48,7 @@ const Calculation = () => {
             
 
             <h4>Exercise Details</h4>
-            <div className='calculation'><h4>Exercise Time:</h4></div>
+            <div className='calculation'><h4>Exercise Time:{total} minite</h4></div>
             <div className='calculation'><h4>Breack Time:</h4></div>
             <button className='activity'> Activity completed</button>
 

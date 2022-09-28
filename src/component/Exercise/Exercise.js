@@ -1,13 +1,13 @@
 import React from 'react';
 import './Excercise.css';
 
-const Exercise = ({ex}) => {
+const Exercise = ({ex ,cart,setCart}) => {
     const {picture,name,id,timeRequired,age}=ex;
 
 
     const handleToCart=(id)=>{
-
-      console.log(id);
+      const newCart=[...cart,ex];
+      setCart(newCart);
     }
     return (
         <div className='card'> 

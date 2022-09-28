@@ -6,6 +6,7 @@ import './Home.css'
 const Home = () => {
 
     const [exercise,setExercise]=useState([]);
+    const [cart,setCart]=useState([]);
     useEffect(()=>{
         fetch('data.json')
         .then(res=>res.json())
@@ -20,12 +21,12 @@ const Home = () => {
            <div className='data-section'>
                 
                 {
-                exercise.map((ex)=><Exercise ex={ex} key={ex.id}></Exercise>)
+                exercise.map((ex)=><Exercise ex={ex} key={ex.id} cart={cart} setCart={setCart}></Exercise>)
                  }
 
             </div>
             <div className='calculation-section'>
-                <Calculation></Calculation>
+                <Calculation  cart={cart}></Calculation>
             </div>
            </div>
         </div>

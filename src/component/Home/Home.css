@@ -9,3 +9,16 @@
 .calculation-section{
     margin: 20px;
 }
+
+@media screen  and (max-width:420px){
+    .data-section{
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+}
+@media screen and (min-width:421px) and(max-width:770px){
+    .data-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}

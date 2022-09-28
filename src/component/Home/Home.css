@@ -1,0 +1,8 @@
+.home-display{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border:1px solid red;
+}
+.calculation-section{
+    border:3px solid blue;
+}

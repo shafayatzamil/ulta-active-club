@@ -1,0 +1,15 @@
+.nav-section{
+    display: flex;
+    
+}
+
+.logo-images{
+    width:50px;
+    margin:10px;
+}
+
+.heading-line{
+    font-size: 32px;
+    color:#03373E;
+    margin:20px;
+}

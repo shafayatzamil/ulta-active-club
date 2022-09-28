@@ -15,7 +15,7 @@ const Home = () => {
 
     return (
         <div>
-            <h2>Select my today exercise {exercise.length}</h2>
+            <h2>Select my today exercise</h2>
             
            <div class="home-display">
            <div className='data-section'>

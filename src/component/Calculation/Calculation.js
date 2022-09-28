@@ -29,6 +29,10 @@ const Calculation = () => {
 
             <h4 className=''>Add to Breack</h4>
 
+            <h4>Exercise Details</h4>
+            <div className='calculation'><h4>Exercise Time:</h4></div>
+            <div className='calculation'><h4>Breack Time:</h4></div>
+            <button className='activity'> Activity completed</button>
 
         </div>
     );

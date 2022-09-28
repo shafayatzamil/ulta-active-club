@@ -19,3 +19,17 @@
     background-color: #d3ede7;
     border-radius: 10px;
 }
+.calculation{
+    background-color: #dcfbfb;
+    padding:10px 15px;
+    margin:10px 0;
+    border-radius: 5px;
+}
+.activity{
+    background-color: #0755a3b7;
+    color:white;
+    padding:10px 20px;
+    margin:20px;
+    border:none;
+    border-radius: 5px;
+}

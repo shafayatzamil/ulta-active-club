@@ -7,14 +7,14 @@
 }
  .cart-btn{
     padding: 10px 30px;
-    background-color: aquamarine;
+    background-color:  #0755a3b7;
     border:none;
     box-shadow: 4px 4px 8px gray;
     border-radius: 6px;
 
  }
  .cart-btn:hover{
-    background-color: rgb(2, 167, 112);
+    background-color: #99c8d4;
  }
 .exercise-img{
     width:220px;

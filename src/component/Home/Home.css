@@ -1,12 +1,11 @@
 .home-display{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    border:1px solid red;
 }
 .data-section{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
 .calculation-section{
-    border:3px solid blue;
+    margin: 20px;
 }

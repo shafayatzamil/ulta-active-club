@@ -27,7 +27,15 @@ const Calculation = () => {
                 </div>
             </div>
 
-            <h4 className=''>Add to Breack</h4>
+            <h4 className=''>Added A Break</h4>
+            <div className='break'>
+            <li>10</li>
+            <li>20</li>
+            <li>30</li>
+            <li>40</li>
+            <li>50</li>
+            </div>
+            
 
             <h4>Exercise Details</h4>
             <div className='calculation'><h4>Exercise Time:</h4></div>

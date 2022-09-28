@@ -1,11 +1,22 @@
 .card{
  
-   
+    margin:10px;
+    padding: 10px;
+    box-shadow: 2px 2px 8px gray;
+    border-radius: 6px;
 }
+ .cart-btn{
+    padding: 10px 30px;
+    background-color: aquamarine;
+    border:none;
+    box-shadow: 4px 4px 8px gray;
+    border-radius: 6px;
 
-
-
-.images{
-    width:250px;
-    height: 150px;
+ }
+ .cart-btn:hover{
+    background-color: rgb(2, 167, 112);
+ }
+.exercise-img{
+    width:220px;
+    height: 200px;
 }

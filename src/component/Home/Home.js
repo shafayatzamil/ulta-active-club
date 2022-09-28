@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Calculation from '../Calculation/Calculation';
 import Exercise from '../Exercise/Exercise';
 import './Home.css'
 
@@ -17,14 +18,14 @@ const Home = () => {
             
            <div class="home-display">
            <div className='data-section'>
-                <h2>Data dection</h2>
+                
                 {
                 exercise.map((ex)=><Exercise ex={ex} key={ex.id}></Exercise>)
                  }
 
             </div>
             <div className='calculation-section'>
-                <h2>calcultaion section </h2>
+                <Calculation></Calculation>
             </div>
            </div>
         </div>

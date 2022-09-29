@@ -12,7 +12,13 @@ const Calculation = ({cart}) => {
     const [breaktext,setBreakText]=useState(0);
     const breakcart=(a)=>{
         setBreakText(a);
-        // localStorage.setItem("break:",a);
+        const prediousStorage=localStorage.getItem("break:");
+        const oldStorage=JSON.parse(prediousStorage);
+        if(oldStorage){
+            localStorage.setItem("break:",JSON.stringify([a]));
+        }else{
+            localStorage.setItem("break:",JSON.stringify([a]))
+        }
     }
     const tostCall=()=>{
         toast("Activity complited bro!!,well done");

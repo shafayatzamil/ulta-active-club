@@ -15,9 +15,9 @@ const Calculation = ({cart}) => {
         const prediousStorage=localStorage.getItem("break:");
         const oldStorage=JSON.parse(prediousStorage);
         if(oldStorage){
-            localStorage.setItem("break:",JSON.stringify([a]));
+            localStorage.setItem("break:",JSON.stringify(a));
         }else{
-            localStorage.setItem("break:",JSON.stringify([a]))
+            localStorage.setItem("break:",JSON.stringify(a))
         }
     }
     const tostCall=()=>{
@@ -62,7 +62,7 @@ const Calculation = ({cart}) => {
 
             <h4>Exercise Details</h4>
             <div className='calculation'><h4>Exercise Time:{total} minite</h4></div>
-            <div className='calculation'><h4>Breack Time:{breaktext}</h4></div>
+            <div className='calculation'><h4>Breack Time:{breaktext?breaktext:localStorage.getItem("break:")}</h4></div>
             <button onClick={tostCall} className='activity'> Activity completed</button>
             <ToastContainer />
 
